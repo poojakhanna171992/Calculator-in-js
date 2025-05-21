@@ -1,14 +1,18 @@
 const inputBox = document.getElementById("inputBox");
 
+//getting value
 function appendValue(value) {
   inputBox.value += value;
 }
+//clear the display.
 function clearDisplay() {
   inputBox.value = "";
 }
+//delete the value.
 function deleteLast() {
   inputBox.value = inputBox.value.slice(0, -1);
 }
+//getting result
 function calculateResult() {
   try {
     inputBox.value = eval(inputBox.value);
@@ -16,6 +20,7 @@ function calculateResult() {
     inputBox.value = "Error";
   }
 }
+// finding square root.
 function squareRoot() {
   try {
     inputBox.value = Math.sqrt(eval(inputBox.value));
@@ -24,6 +29,7 @@ function squareRoot() {
   }
 }
 
+//finding percentage
 function percentage() {
   try {
     inputBox.value = eval(inputBox.value) / 100;
@@ -31,9 +37,9 @@ function percentage() {
     inputBox.value = "Error";
   }
 }
+//calculate the power result.
 function calculateResult() {
   try {
-    // Replace ^ with ** (JS power operator) OR handle it manually
     if (inputBox.value.includes("^")) {
       const parts = inputBox.value.split("^");
       const base = eval(parts[0]);
@@ -46,6 +52,7 @@ function calculateResult() {
     inputBox.value = "Error";
   }
 }
+//finding square.
 function square() {
   try {
     const value = eval(inputBox.value);
@@ -54,6 +61,7 @@ function square() {
     inputBox.value = "Error";
   }
 }
+//finding cube.
 function cube() {
   try {
     const value = eval(inputBox.value);
