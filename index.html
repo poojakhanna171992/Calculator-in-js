@@ -39,6 +39,12 @@
               onclick="appendValue('/')"
               class="operator"
             />
+            <input
+              type="button"
+              value="x²"
+              onclick="square()"
+              class="operator"
+            />
           </div>
           <div>
             <input type="button" value="7" onclick="appendValue('7')" />
@@ -50,6 +56,7 @@
               onclick="appendValue('*')"
               class="operator"
             />
+            <input type="button" value="√" onclick="squareRoot()" />
           </div>
           <div>
             <input type="button" value="4" onclick="appendValue('4')" />
@@ -59,6 +66,12 @@
               type="button"
               value="-"
               onclick="appendValue('-')"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="%"
+              onclick="percentage()"
               class="operator"
             />
           </div>
@@ -72,6 +85,12 @@
               onclick="appendValue('+')"
               class="operator"
             />
+            <input
+              type="button"
+              value="^"
+              onclick="appendValue('^')"
+              class="operator"
+            />
           </div>
           <div>
             <input type="button" value="00" onclick="appendValue('00')" />
@@ -82,6 +101,7 @@
               class="equal operator"
               onclick="calculateResult()"
             />
+            <input type="button" value="x³" onclick="cube()" class="operator" />
           </div>
         </form>
       </div>
